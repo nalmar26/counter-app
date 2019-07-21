@@ -58,13 +58,13 @@ class Counters extends Component {
         };
         const counters = this.state.counters;
         counters.push(c);
-        this.setState({ids:this.state.ids+1,
-            counters:counters});
+        this.setState(counters);
     }
     handleReset = ()=>{
         const counters = [...this.state.counters];
         counters.map(c => c.value = 0);
         this.setState(counters);
+        this.setState({ids:0});
     }
 }
  
