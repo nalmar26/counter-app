@@ -53,8 +53,9 @@ class Counters extends Component {
     }
     handleAdd = () =>{
         const c = {
-            id:this.state.ids+1,
-            value : 0
+            id:++this.state.ids,
+            value : 0,
+            imageURL:'https://picsum.photos/90'
         };
         const counters = this.state.counters;
         counters.push(c);
