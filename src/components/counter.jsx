@@ -55,7 +55,7 @@ class Counter extends Component {
     //     return (this.state.tags.map(tag => <li key={tag}>{tag}</li>));
     // }
     getBadgeClasses() {
-        let classes = "badge m-2 badge-";
+        let classes = "badge m-2 bg-";
         classes += this.props.counter.value === 0 ? "warning" : "primary";
         return classes;
     }

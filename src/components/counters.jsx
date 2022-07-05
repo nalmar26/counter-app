@@ -15,7 +15,7 @@ class Counters extends Component {
         return ( <div>
             <button className="btn-primary btn-sm m-2" onClick={this.handleReset}>reset</button>
             <button className="btn-primary btn-sm m-2" onClick={this.handleAdd}>Add</button>
-            <span className="badge badge-pill badge-secondary">{this.getSum()}</span>
+            <span className="badge badge-pill bg-secondary">{this.getSum()}</span>
             {
                 this.state.counters.map(c => (
                 <Counter key={c.id} counter={c} 
